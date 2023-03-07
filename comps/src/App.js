@@ -1,34 +1,27 @@
-import { DiAndroid, DiAtom, DiJavascript1 } from "react-icons/di";
-import Button from "./Button";
+import Accordion from "./components/Accordion"
 
 function App() {
+
+  const items = [
+    {
+      id:'kovfeiovm',
+      label: 'Can I use React in a project',
+      content:' Yes you can use React in any project.Yes you can use React in any project.'
+    },
+    {
+      id:'kovlkdf',
+      label: 'Can I use React in a project',
+      content:' Yes you can use React in any project.Yes you can use React in any project.'
+    },
+    {
+      id:'dkocmdkms',
+      label: 'Can I use React in a project',
+      content:' Yes you can use React in any project.Yes you can use React in any project.'
+    }
+  ]
+
   return (
-  <div>
-    <div>
-      <Button success rounded>
-        <DiJavascript1 />
-        Click Me!
-        </Button>
-    </div>
-    <div>
-      <Button danger>
-        <DiAndroid />
-        Buy Now
-      </Button>
-    </div>
-    <div>
-      <Button warning>See Deals</Button>
-    </div>
-    <div>
-      <Button secondary>Hide Adds</Button>
-    </div>
-    <div>
-      <Button primary rounded outline>
-        <DiAtom />
-        Something
-      </Button>
-    </div>
-  </div>
+    <Accordion items={items}/>
 )}
 
 export default App;
