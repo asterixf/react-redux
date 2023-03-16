@@ -19,7 +19,7 @@ function Link({to, children, className, activeClassName}){
     navigate(to);
   };
 
-  return <a class={classes} href={to} onClick={handleClick}>{children}</a>
+  return <a className={classes} href={to} onClick={handleClick}>{children}</a>
 }
 
 export default Link;
